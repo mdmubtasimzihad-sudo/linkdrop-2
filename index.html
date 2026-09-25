@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkDrop — Video Link Tool</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="shell">
+
+    <section class="hero">
+
+      <div class="badge">LINKDROP</div>
+
+      <h1>Save videos from links.</h1>
+
+      <p>
+        Paste a supported social-media URL to check the link.
+        Only content that you are authorized to download should be saved.
+      </p>
+
+      <form id="form" class="card">
+
+        <label for="url">Video URL</label>
+
+        <div class="row">
+
+          <input
+            id="url"
+            type="url"
+            placeholder="Paste YouTube, Facebook, TikTok or Instagram link…"
+            required
+          >
+
+          <button type="submit">
+            Check link
+          </button>
+
+        </div>
+
+        <div class="platforms">
+          <span>YouTube</span>
+          <span>Facebook</span>
+          <span>TikTok</span>
+          <span>Instagram</span>
+        </div>
+
+      </form>
+
+      <div id="result" class="result hidden"></div>
+
+    </section>
+
+
+    <section class="info">
+
+      <div>
+        <strong>01</strong>
+        <h3>Paste</h3>
+        <p>Add a video URL.</p>
+      </div>
+
+      <div>
+        <strong>02</strong>
+        <h3>Check</h3>
+        <p>We identify the platform.</p>
+      </div>
+
+      <div>
+        <strong>03</strong>
+        <h3>Download</h3>
+        <p>Use an authorized download method.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
