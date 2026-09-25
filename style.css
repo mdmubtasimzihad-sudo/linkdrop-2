@@ -1,0 +1,162 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111;
+  background: #f4f4f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.shell {
+  max-width: 1050px;
+  margin: auto;
+  padding: 70px 22px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .16em;
+  font-weight: 800;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: .98;
+  margin: 24px auto 18px;
+  max-width: 850px;
+  letter-spacing: -.05em;
+}
+
+.hero > p {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  padding: 22px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #d5d5d5;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 16px;
+}
+
+button {
+  border: 0;
+  border-radius: 14px;
+  background: #111;
+  color: #fff;
+  padding: 0 22px;
+  font-weight: 800;
+}
+
+.platforms {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.platforms span {
+  font-size: 12px;
+  background: #f1f1ee;
+  padding: 7px 10px;
+  border-radius: 999px;
+}
+
+.result {
+  margin: 16px auto 0;
+  padding: 18px;
+  border-radius: 18px;
+  background: #111;
+  color: #fff;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.info div {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.info strong {
+  font-size: 12px;
+  color: #888;
+}
+
+.info h3 {
+  margin: 15px 0 5px;
+}
+
+.info p {
+  margin: 0;
+  color: #777;
+}
+
+@media (max-width: 650px) {
+  .shell {
+    padding: 40px 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  button {
+    height: 52px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
